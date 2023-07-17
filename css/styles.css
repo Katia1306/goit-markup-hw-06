@@ -1089,11 +1089,7 @@ fill: #FFFFFF;
 }
 
 .menu-container {
-  display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
-  position: fixed;
+ position: fixed;
   top: 0;
   left: 0;
   width: 428px;
@@ -1117,9 +1113,11 @@ fill: #FFFFFF;
 }
 
 .mobile-menu {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    padding-top: 80px;
 }
 
 .mobile-menu .link {
@@ -1139,3 +1137,4 @@ font-size: 36px;
 .mob-menu-link:hover {
 color: var(--logo-color);
 }
+
