@@ -110,11 +110,7 @@ button {
   border-bottom: 1px solid #e7e9fc ;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-.header-container {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-}
+
 
 .header-nav {
   display: flex;
@@ -179,11 +175,7 @@ button {
 .address {
   font-style: normal;
 }
-.address-list {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
+
 .address-item { 
   padding: 24px 0;
   font-family: var(--primary-font);
@@ -211,7 +203,34 @@ button {
       display: none;}
 }
 @media only screen and (min-width: 768px) {
+ 
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+ }
 
+  .address-item {
+    padding: 16px 0;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.48px;;
+    color: var(--slate);
+  }
+}
+@media only screen and (min-width: 1158px) {
+.address-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 }
 
 /**
@@ -1113,11 +1132,8 @@ fill: #FFFFFF;
 }
 
 .mobile-menu {
-  display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
-    padding-top: 80px;
+  
+    
 }
 
 .mobile-menu .link {
