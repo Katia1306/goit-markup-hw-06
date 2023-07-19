@@ -331,6 +331,7 @@ button {
           background-size: cover;
           padding: 204px 0;
           margin: 0 auto;}
+                    }
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -354,6 +355,7 @@ button {
             margin: 0 auto;
             margin-bottom: 36px;
           }
+          
 @media only screen and (min-width: 1158px) {
 .section-hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
