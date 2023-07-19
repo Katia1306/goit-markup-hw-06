@@ -28,7 +28,8 @@ body {
 }
 img {
   display: block;
- 
+  max-width: 100%;
+  height: auto;
 }
 
 /* Base styles for small devices */
@@ -287,12 +288,18 @@ button {
 .hero-button:focus {
   background-color: var(--violet);
 }
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) { 
+  .section-hero { 
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people_off_mob_@2x.jpg);
+  }
+}
+
 @media only screen and (max-width: 767px){
-
-
-  .section-hero {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/hero-people-office.jpg);
+ .section-hero {
       max-width: 428px;
       background-repeat: no-repeat;
       background-position: center;
@@ -316,14 +323,25 @@ button {
    @media only screen and (min-width: 768px) {
       .section-hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/hero-people-office.jpg);
+            url(../images/people_off_tab_@1x.jpg);
+
           max-width: 768px;
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
           padding: 204px 0;
           margin: 0 auto;}
-            
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .section-hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/people_off_tab_@2x.jpg)
+      }
+   
+    
+  }
       .hero-title {
             max-width: 496px;
             font-family: var(--primary-font);
@@ -339,7 +357,7 @@ button {
 @media only screen and (min-width: 1158px) {
 .section-hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/hero-people-office.jpg);
+      url(../images/people_off_desc_@1x.jpg);
     max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
@@ -360,6 +378,13 @@ button {
       margin-bottom: 48px;
     }
 }
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/people_off_desc_@2x.jpg)
+  }
 }
 
 /**
