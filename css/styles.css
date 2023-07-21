@@ -36,8 +36,8 @@ img {
 .container {
     min-width: 320px;
     max-width: 428px;
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
  }
@@ -267,6 +267,7 @@ button {
   | Hero styles
   |============================
 */
+
 .hero-button {
   display: block;
   height: 56px;
@@ -310,14 +311,14 @@ button {
   .hero-title {
       max-width: 320px;
       font-family: var(--primary-font);
-      font-weight: 700;
-      font-size: 36px;
-      letter-spacing: 0.72px;
-      line-height: 1.11;
-      text-align: center;
-      color: var(--white);
-      margin: 0 auto;
-      margin-bottom: 72px;
+        font-weight: 700;
+        font-size: 36px;
+        letter-spacing: 0.72px;
+        line-height: 1.11;
+        text-align: center;
+        color: var(--white);
+        margin: 0 auto;
+        margin-bottom: 72px;
     }
         }
    @media only screen and (min-width: 768px) {
@@ -397,9 +398,6 @@ button {
 .section-features {
   padding: 120px 0;
 }
-
-
-
 .features-title {
   margin-bottom: 8px;
   font-family: var(--primary-font);
@@ -419,12 +417,7 @@ button {
 }
 
 @media only screen and (max-width: 767px) {
-.section-features {
-  padding-left: 22px;
-  padding-right: 22px;
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
+
 .features-item:not(:last-child) {
   margin-bottom: 72px;}
 .features-list {
@@ -1004,32 +997,29 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       
   }
   .ft-logo{
-    margin-top: 97px;
+   margin-bottom: 72px;
   }
-  .footer-text {
-    margin-left: 86px;
-    margin-right: 86px;
-    margin-bottom: 72px;
-  }
+
   
   .footer-form-section {
-    display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 96px;
+  margin-top: 72px;
     }
+
+
    .form-btn {
     margin-top: 16px;
-    margin-bottom: 96px;
-    margin-left: 132px;
-    margin-right: 132px;
+    
+    margin-left: auto;
+    margin-right: auto;
    }
    
    .footer-input {
-    width: 398px;
-      height: 40px;
-    margin-left: 15px;
-    margin-right: 15px;
+    width: 100%;
+    height: 40px;
+
+   }
+   .footer-form-txt{ 
+    text-align: center;
    }
 }
 @media only screen and (min-width: 768px){
@@ -1406,18 +1396,18 @@ color: var(--logo-color);
 .mob-address-link {
   color: var(--slate);
     font-size: 20px;
-    
+    font-style: normal;
     font-weight: 500;
     line-height: 1.2;
     
     letter-spacing: 0.4px;
 }
-.mob-address-link:hover{
+.violet {
   color: var(--logo-color);
 }
 .mobile-networks {
   display: flex;
-  gap: 56px;
+  gap: 30px;
 
 }
 .mob-networks-link {
