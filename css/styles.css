@@ -34,7 +34,7 @@ img {
 
 /* Base styles for small devices */
 .container {
-    min-width: 320px;
+   
     max-width: 428px;
     padding-left: 16px;
     padding-right: 16px;
@@ -285,6 +285,7 @@ button {
   margin: 0 auto;
 }
 
+
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--violet);
@@ -309,10 +310,11 @@ button {
       margin: 0 auto;
     }
   .hero-title {
-      max-width: 320px;
-      font-family: var(--primary-font);
-        font-weight: 700;
-        font-size: 36px;
+        max-width: 320px;
+        font-family: var(--primary-font);
+      font-weight: 500;
+       font-size: 36px;
+      font-style: normal;
         letter-spacing: 0.72px;
         line-height: 1.11;
         text-align: center;
@@ -339,7 +341,7 @@ button {
     (min-resolution: 2dppx) {
       .section-hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/people_off_tab_@2x.jpg)
+        url(../images/people_off_tab_@2x.jpg);
       }
    
     
@@ -380,6 +382,7 @@ button {
       margin: 0 auto;
       margin-bottom: 48px;
     }
+    
 }
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
@@ -407,14 +410,6 @@ button {
   line-height: 1.2;
   color: var(--logo-color-dark);
 }
-.feat-text {
-  font-family: var(--primary-font);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.32px;
-  color: var(--slate);
-}
 
 @media only screen and (max-width: 767px) {
 
@@ -426,7 +421,12 @@ button {
  }
 .features-title { text-align: center;}
 .feat-text {
-  font-weight: 500px;
+  font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    color: var(--slate);
 }
 .features-title {
   font-weight: 700;
@@ -485,16 +485,16 @@ button {
     margin-bottom: 8px;
   }
  }
-
-
 .feat-text {
   font-family: var(--primary-font);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.32px;
   color: var(--slate);
 }
+
+
 
 /**
   |============================
@@ -683,22 +683,26 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media only screen and (max-width: 767px) {
 .customers-list { 
+  
     display: flex;
     flex-direction: wrap;
     flex-wrap: wrap;
     align-items: center;
-    gap: 24px;
+    gap: 16px;
     
   } 
   .customers-name {
-    width: calc((100% - 24px) / 2);
+    width: calc((100% - 16px) / 2);
   }
   .cst-icon { 
-    width: 110px;
-    margin: 16px 40px;
+   width: 110px;
+ 
   
   }
-  .customers-link { width: 190px;
+  .customers-link { 
+    
+  width: 140px;
+  height: 88px;
   
   }
 }
