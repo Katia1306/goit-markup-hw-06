@@ -205,6 +205,9 @@ button {
       align-items: center;
       list-style: none;
     }
+  .current {
+    color: #404BBF;
+  }
   .address {
     display: flex;
     flex-direction: column;
@@ -229,6 +232,7 @@ button {
     display: none;
   }
 }
+
 @media only screen and (min-width: 1158px) {
 .address-list {
     display: flex;
@@ -246,7 +250,7 @@ button {
           list-style: none;
         }
     .address-item {
-          padding: 24px 0;
+          
           font-family: var(--primary-font);
           font-weight: 400;
           font-size: 16px;
@@ -260,7 +264,9 @@ button {
   .menu-toggle-icon {
           display: none;
                 }
+              
 }
+
 
 /**
   |============================
@@ -296,7 +302,11 @@ button {
   margin: 0 auto;
 }
 
-
+.section-hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/people_off_mob@1x.jpg);
+    }
+    
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--violet);
@@ -307,7 +317,7 @@ button {
 (min-resolution: 2dppx) { 
   .section-hero { 
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people_off_mob_@2x.jpg);
+    url(../images/people_off_mob@2x.jpg);
   }
 }
 
@@ -337,13 +347,13 @@ button {
    @media only screen and (min-width: 768px) {
       .section-hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/people_off_tab_@1x.jpg);
+            url(../images/people_off_tab@1x.jpg);
 
           max-width: 768px;
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
-          padding: 204px 0;
+          padding: 112px 0;
           margin: 0 auto;}
                     }
 
@@ -352,10 +362,10 @@ button {
     (min-resolution: 2dppx) {
       .section-hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/people_off_tab_@2x.jpg);
+        url(../images/people_off_tab@2x.jpg);
       }
    
-    
+  
   }
       .hero-title {
            
@@ -365,7 +375,7 @@ button {
 @media only screen and (min-width: 1158px) {
 .section-hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/people_off_desc_@1x.jpg);
+      url(../images/people_off_desc@1x.jpg);
     max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
@@ -383,7 +393,7 @@ button {
 (min-resolution: 2dppx) {
   .section-hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/people_off_desc_@2x.jpg)
+      url(../images/people_off_desc@2x.jpg)
   }
 }
 
@@ -406,7 +416,9 @@ button {
 }
 
 @media only screen and (max-width: 767px) {
-
+.section-features {
+    padding: 96px 0;
+  }
 .features-item:not(:last-child) {
   margin-bottom: 72px;}
 .features-list {
@@ -441,15 +453,15 @@ button {
      .features-list {
        display: flex;
        flex-wrap: wrap;
-       gap: 24px;
+       gap: 72px 24px;
      }
    .features-item {
     flex-basis: calc((100% - 24px) / 2);}
    .feat-text {
-    font-weight: 500px;
+    font-weight: 500;
    }
    .features-title {
-       font-weight: 500;
+       font-weight: 700;
        font-size: 36px;
        letter-spacing: 0.72px;
        line-height: 1.11;
@@ -594,7 +606,12 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 8px;
 }
 @media only screen and (max-width: 767px){
-.team-list {
+.section-team {
+    padding: 96px 0;
+    background-color: var(--cloud);
+  }
+
+  .team-list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -613,7 +630,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      gap: 24px;
+      gap: 64px 24px;
     }
   .team-item {
       width: 264px;
@@ -686,6 +703,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   } 
   .customers-name {
     width: calc((100% - 16px) / 2);
+    height: 88px;
   }
   .cst-icon { 
    width: 110px;
@@ -1023,7 +1041,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 @media only screen and (min-width: 768px){
   .footer-general {
-  
+     max-width: 550px;
       display: flex;
       flex-wrap: wrap;
     }
@@ -1034,8 +1052,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   
 .footer-form-section {
-   display: flex;
-    gap: 16px;
+
     margin-top: 72px;
   }
 
@@ -1052,7 +1069,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   } 
      
   .footer-input {
-    display: flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 24px;
   }
@@ -1064,6 +1081,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .footer-general {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: center;
   }
 
     .ft-form {
